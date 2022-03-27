@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link href="form.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<section class="form">
+    <div class="form__delivery">
+        <h1>
+            Способ получения
+        </h1>
+        <form action="" class="form__delivery">
+            <div class="form__delivery__city">
+                <label>
+                    <input type="text" placeholder="Город" name="город" required>
+                </label>
+            </div>
+            <div class="form__delivery__post">
+                <label>
+                    <select name="select">
+                        <option value="value1">Почта России</option>
+                        <option value="value2">DHL Express</option>
+                        <option value="value3">FedEx</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__delivery__address">
+                <label>
+                    <input class="form__delivery__address__str" type="text" placeholder="Улица" name="улица" required>
+                </label>
+                <label>
+                    <input class="form__delivery__address__h" type="text" placeholder="Дом" name="дом" required>
+                </label>
+                <label>
+                    <input class="form__delivery__address__ap" type="text" placeholder="Квартира" name="квартира">
+                </label>
+                <label>
+                    <input class="form__delivery__address__ind" type="text" placeholder="Индекс" name="индекс" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <textarea placeholder="Добавить комментарий" name="Добавить комментарий" cols="30"
+                              rows="1"></textarea>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="form__user">
+        <h1>
+            Данные получателя
+        </h1>
+        <form action="">
+            <label>
+                <input class="form__user__sur" type="text" placeholder="Фамилия" name="Фамилия" required>
+            </label>
+            <label>
+                <input class="form__user__name" type="text" placeholder="Имя" name="имя" required>
+            </label>
+            <label>
+                <input class="form__user__pat" type="text" placeholder="Отчество" name="отчество">
+            </label>
+            <label>
+                <input class="form__user__num" type="text" placeholder="Номер телефона" name="номер телефона">
+            </label>
+            <p>По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+            <label>
+                <input class="form__user__em" type="email" placeholder="E-mail" name="e-mail">
+            </label>
+            <p>На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+            <input class="custom-checkbox" type="checkbox" id="Подписаться на рассылку новинок и акций"
+                   name="Подписаться на рассылку новинок и акций" checked>
+            <label for="Подписаться на рассылку новинок и акций">Подписаться на рассылку новинок и акций</label>
+
+        </form>
+    </div>
+    <div class="form__payment">
+        <h1>
+            Способ оплаты
+        </h1>
+        <form>
+            <div>
+                <label for="Оплата при получении наличными или картой">
+                    <input type="radio"
+                           id="Оплата при получении наличными или картой"
+                           name="pay" value="text"
+                           class="real-radio-btn"><span></span>Оплата при получении наличными или картой</label>
+            </div>
+            <div>
+                <label for="Оплата банковской картой онлайн">
+                    <input type="radio" id="Оплата банковской картой онлайн"
+                           name="pay" value="text" class="real-radio-btn" checked><span></span>Оплата банковской картой
+                    онлайн</label>
+            </div>
+
+        </form>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url(
+'https://fonts.googleapis.com/css?family=Montserrat'
+);
+
+body {
+    font-family: 'Montserrat', serif;
+    max-width: 700px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #424242;
+    margin-top: 50px;
+}
+
+.form__delivery {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__delivery input, .form__delivery select, .form__delivery textarea, .form__user input {
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 83px;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 10px 0;
+}
+
+.form__delivery__city input, .form__delivery__post select {
+    width: 100%;
+}
+
+.form__delivery textarea {
+    font-family: 'Montserrat', serif;
+    resize: none;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.form__delivery__city, .form__delivery__post {
+    width: 66%;
+}
+
+.form__delivery__address__str {
+    width: 38%;
+}
+
+.form__delivery__address__h, .form__delivery__address__ap, .form__delivery__address__ind {
+    width: 20%;
+}
+
+.form__user__sur, .form__user__name, .form__user__pat, .form__user__num {
+    width: 32.9%;
+}
+
+.form__user__em {
+    width: 100%;
+}
+
+.form__payment input {
+    display: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #976464;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 2px solid #976464;
+    border-bottom: 2px solid #976464;
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.form__payment div {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 20px;
+    height: 36px;
+    color: #424242;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #976464;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real-radio-btn:checked + span::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-radio-btn {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
